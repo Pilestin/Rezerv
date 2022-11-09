@@ -4,7 +4,7 @@ from PIL import Image
 ASCII_CHARS = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]
 
 # resize image according to a new width
-def resize_image(image, new_width=200):
+def resize_image(image, new_width=300):
     width, height = image.size
     ratio = height/width
     new_height = int(new_width * ratio)
@@ -22,11 +22,12 @@ def pixels_to_ascii(image):
     characters = "".join([ASCII_CHARS[pixel//25] for pixel in pixels])
     return(characters)    
 
-def main(new_width=200):
-    # attempt to open image from user-input
-    path = "src/ocü.jpg"
+def main(new_width=300):
+    
+    # resmin bulunduğu path bilgisi 
+    path = "src/ataturk4.jpg"
     try:
-        # E:\Kodlar\atatürk2.jpg
+        
         image = Image.open(path)
     except:
         print(path, " is not a valid pathname to an image.")
