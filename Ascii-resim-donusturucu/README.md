@@ -1,4 +1,7 @@
+Kaynak : https://github.com/kiteco/python-youtube-code/tree/master/ascii
+
 Path olarak verilen resim dosyasını ascii karakterleri ile ( dosyada tanımlanan ) tekrardan oluşturur.
+
 
 
 
