@@ -10,3 +10,4 @@
 | bs4-Bist30 | [BIST30 hisse kodları web scrapping ile alma örneği (Bitirme Projesi için)](https://github.com/Pilestin/Rezerv/tree/main/bs4-Bist30) |
 |SimulatedAnnealing| [Simulated Annealing (Benzetimli Tavlama) algoritmasının araştırılması ve gerçeklenmesi](https://github.com/Pilestin/Rezerv/tree/main/simulated-annealing) |
 |ESOGU-WIFI Login Script | [Her gün ESOGU-WIFI için username ve password yazmaktan sıkılanlara özel](https://github.com/Pilestin/Rezerv/tree/main/ESOGU_WIFI_login)|
+|CodeTime_Downloader | [VSCode eklentisi olan bu araç istatistiklerinizi export etmek için para istemesi sizi durduramaz](https://github.com/Pilestin/Rezerv/tree/main/CodeTime_Downloader)|
