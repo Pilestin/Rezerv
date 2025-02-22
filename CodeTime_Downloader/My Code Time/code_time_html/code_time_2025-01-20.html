@@ -1,0 +1,735 @@
+<a href="../index.html" style="display: block; margin: 10px 0; padding: 10px; background-color: #007bff; color: white; text-align: center; width: 150px; border-radius: 5px; text-decoration: none;">
+⬅ Geri Dön
+</a>
+<html lang="en" style="--announcekit-modal-font-multiplier: 1;"><head><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style>
+  <title>
+      Software | Code Time
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="view-transition" content="same-origin">
+
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="5NjFQ-dwvYTr39ajJoLaF_eQpl_2klBeSiTahoE9C2HAWsLMeUnadyJHKMWUHM3Hp0wqQ7aAuRqyoLo_9C5AtQ">
+    
+
+    <link rel="icon" type="image/x-icon" href="https://d20qih2bscj2of.cloudfront.net/assets/favicon-96c2444850e706277ddd702d3426e7fc0cce75149145b7daebba9c7c9cb19ade.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Vendor stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://beacon-v2.helpscout.net/static/js/vendor.5fe8f3bc.js"></script><script type="text/javascript" src="https://beacon-v2.helpscout.net/static/js/main.9a2ed260.js"></script><script type="text/javascript" async="" src="https://beacon-v2.helpscout.net"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/K84mNEUeccJdj3uDClfs3GTHqDijVjNk/analytics.min.js"></script><script>
+      if (localStorage.theme === 'dark') {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+
+    <script src="https://code.highcharts.com/11.4/highcharts.js"></script>
+    <script src="https://code.highcharts.com/11.4/modules/no-data-to-display.js"></script>
+    <script src="https://code.highcharts.com/11.4/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/11.4/modules/annotations.js"></script>
+    <script src="https://code.highcharts.com/maps/11.4/modules/map.js"></script>
+    <script src="https://code.highcharts.com/11.4/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/11.4/modules/pattern-fill.js"></script>
+    <script>
+      (function(H) {
+        const allowedAttributes = [
+          'data-controller', 'data-glossary-target', 'data-action', 'data-glossary-lift-value',
+          'data-value', 'data-name', 'data-modal-id', 'data-flyout-id', 'data-turbo-frame', 'href', 'data-y-value',
+          'onclick'
+        ];
+        allowedAttributes.forEach((attr) => {
+          H.AST.allowedAttributes.push(attr)
+        });
+
+        H.setOptions({
+          lang: {
+            thousandsSep: ','
+          }
+        });
+        H.seriesType('jump-line', 'column', {
+          id: 'refLine',
+          height: 3,
+          color: '#FFA800',
+          borderWidth: 0
+        }, {
+          translate: function() {
+            H.seriesTypes.column.prototype.translate.apply(this);
+            this.points.forEach(function(point) {
+              point.shapeArgs.height = this.options.height;
+              point.shapeArgs.y = point.shapeArgs.y - this.options.height
+            }, this);
+          }
+        });
+
+        H.seriesType('solid-jump-line', 'column', {
+          id: 'soldRefLine',
+          height: 3,
+          borderWidth: 0,
+          borderRadius: 0
+        }, {
+          translate: function() {
+            H.seriesTypes.column.prototype.translate.apply(this);
+            this.points.forEach(function(point) {
+              point.shapeArgs.height = this.options.height;
+              point.shapeArgs.y = point.shapeArgs.y - this.options.height
+            }, this);
+          }
+        });
+
+        H.seriesTypes.column.prototype.crispCol = function (x, y, w, h) {
+          return {
+            x: x,
+            y: y,
+            width: w,
+            height: h
+          }
+        }
+      }(Highcharts));
+    </script>
+
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window.analytics.initialized)return window.analytics[e].apply(window.analytics,arguments);var i=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");i.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}i.unshift(e);analytics.push(i);return analytics}};for(var i=0;i<analytics.methods.length;i++){var key=analytics.methods[i];analytics[key]=analytics.factory(key)}analytics.load=function(key,i){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=i};analytics._writeKey="K84mNEUeccJdj3uDClfs3GTHqDijVjNk";;analytics.SNIPPET_VERSION="5.2.0";
+
+      analytics.load("K84mNEUeccJdj3uDClfs3GTHqDijVjNk", {
+        cookie: {
+          domain: 'software.com',
+          maxage: 7, // 7 days
+          path: '/',
+          sameSite: 'Lax',
+          secure: true
+          }
+      });
+
+        analytics.identify("954252", {
+          "email": "yasin.unal@bil.omu.edu.tr"
+        });
+      }}();
+    </script>
+
+    <script src="https://d20qih2bscj2of.cloudfront.net/assets/application-b1a29b0aea9dff3fd36360f6d3968f1d10451b5b256832ec7b20fdc3ea87fb45.js" data-turbo-track="reload" defer="defer"></script>
+    <link rel="stylesheet" href="https://d20qih2bscj2of.cloudfront.net/assets/application_styles-95f72d4c7194bd38e2dec64545f2eb92e3cf332dcb26a47f627af7d2b06f84e1.css" data-turbo-track="reload">
+
+    
+
+    <meta name="turbo-prefetch" content="false">
+
+    <meta name="turbo-refresh-method" content="replace"><meta name="turbo-refresh-scroll" content="preserve">
+  <style type="text/css">
+    .announcekit-minimalist-1740214267228-8385 {
+      transform: scale(0.5);
+      margin-left: -0.3em;
+      margin-top: -0.8em;
+    }
+
+    .announcekit-widget-floating-badge .announcekit-widget-badge.announcekit-minimalist-1740214267228-8385 {
+      margin-left: auto;
+      margin-top: auto;
+    }
+  </style><style type="text/css">
+    .announcekit-booster-modal-mzqixudr3 {
+      box-sizing: border-box;
+      display: none;
+      flex-direction: column;
+      box-shadow: 0 1px 7px 0 rgba(0,0,0,0.18);
+      z-index: 2147484000;
+      cursor: pointer;
+      position: fixed;
+      bottom: 1em;
+      left: 1em;
+      font-size: calc(var(--announcekit-modal-font-multiplier, 1) * 1em);
+      padding: 0.5em;
+      border-radius: 4px;
+      max-width: min(calc(100vw - 2em), 400px);
+      transition-property: opacity, transform;
+      transition-duration: .5s;
+      transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+      text-decoration: none;
+    }
+
+    .announcekit-booster-modal-mzqixudr3 .announcekit-booster-modal-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 0.5em;
+    }
+
+    .announcekit-booster-modal-mzqixudr3 .announcekit-booster-modal-close {
+      margin-left: auto;
+      padding: 5px 10px 5px 5px;
+      opacity: 0;
+      transition: .2s linear opacity;
+      color: black;
+    }
+
+    .announcekit-booster-modal-mzqixudr3 .announcekit-booster-modal-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: none !important;
+    }
+
+    .announcekit-booster-modal-mzqixudr3:hover .announcekit-booster-modal-close {
+      opacity: 1;
+    }
+
+    .announcekit-booster-modal-mzqixudr3 .announcekit-booster-modal-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-top: 0.5em;
+      text-decoration: none;
+      font-size: 0.5em;
+    }
+
+    .announcekit-booster-modal-mzqixudr3 .announcekit-booster-modal-referer-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .announcekit-booster-modal-mzqixudr3 .announcekit-booster-modal-body {
+      line-height: 1.5em;
+      font-size: 0.8em;
+    }
+
+    .announcekit-booster-modal-mzqixudr3-inactive {
+      display: flex;
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    .announcekit-booster-modal-mzqixudr3-active {
+      display: flex;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style></head>
+
+  <body class="h-screen overflow-hidden bg-gray-100 dark:bg-gray-900" data-controller="application main-navigation turbo-graph-error-handler turbo-false-button-disable">
+    <turbo-cable-stream-source channel="Turbo::StreamsChannel" signed-stream-name="IloybGtPaTh2YzNka2IzUmpiMjB2VlhObGNpODVOVFF5TlRJIg==--6e898d186c4587eee824ec2325c3646f4ad566011376f69cc285d7c6f00f5a7a" connected=""></turbo-cable-stream-source>
+
+    <div id="flash_messages_container" class="flash-wrapper" data-turbo-temporary="">
+</div>
+
+
+    <div class="flex h-screen">
+        <div class="fixed z-50 flex items-center w-full gap-3 p-3 bg-gray-700 lg:hidden dark:bg-gray-900">
+  <span data-action="click->main-navigation#toggleMobileNav" class="cursor-pointer">
+    <i data-main-navigation-target="menuIcon"><svg class="pointer-events-none h-6 w-6 text-white" viewBox="0 0 24 24" data-icon="bars3" fill="none" role="img">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+
+</svg>
+</i>
+    <i data-main-navigation-target="xIcon" class="hidden"><svg class="pointer-events-none h-6 w-6 text-white" viewBox="0 0 24 24" data-icon="x" fill="none" role="img">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+
+</svg>
+</i>
+  </span>
+</div>
+
+<div data-action="click->main-navigation#toggleMobileNav" data-main-navigation-target="bgOverlay" class="absolute top-0 left-0 z-40 hidden w-full h-screen lg:hidden bg-black/50">
+</div>
+<nav data-main-navigation-target="mobileNav" data-controller="scroll-to" class="fixed left-0 z-50 flex-col justify-between hidden w-64 min-[2048px]:w-80 h-full mt-12 bg-gray-700 lg:static lg:flex shrink-0 sm:shadow-lg lg:shadow shadow-black lg:mt-0 dark:bg-gray-900">
+    <div class="w-full p-2">
+      <div class="z-50">
+  <div class="relative w-full px-2 py-3 pr-16 text-sm font-semibold text-white rounded-md focus:outline-none focus:ring-0">
+    <span class="flex items-center">
+      <img class="w-5" src="https://d20qih2bscj2of.cloudfront.net/assets/codetime_logo-575b947dfa1039f7ed5b13d20a0832d4ec76323f3a30869a744b7b78348203e6.svg">
+      <span class="ml-2">Code Time</span>
+    </span>
+  </div>
+</div>
+
+    </div>
+    <div class="flex flex-col overflow-y-auto grow">
+    <div>
+        <a class="btn-left-nav pl-4 current" role="menuitem" href="/code_time">
+          <div class="flex items-center justify-between h-5 pr-2">
+            <h1>Dashboard</h1>
+          </div>
+</a>    </div>
+    <div>
+        <a class="btn-left-nav pl-4" role="menuitem" href="/code_time/reports">
+          <div class="flex items-center justify-between h-5 pr-2">
+            <h1>Reports</h1>
+          </div>
+</a>    </div>
+    <div>
+        <a class="btn-left-nav pl-4" role="menuitem" href="/code_time/billing">
+          <div class="flex items-center justify-between h-5 pr-2">
+            <h1>Billing</h1>
+          </div>
+</a>    </div>
+</div>
+
+  <div class="mb-10 border-t border-gray-600 lg:mb-0 dark:border-gray-800">
+    <a id="announcekit-widget" class="btn-left-nav" data-announcekit-mode="badge" style="cursor: pointer; position: relative;">
+      <div class="flex items-center">
+        <svg class="pointer-events-none h-5 w-5" viewBox="0 0 24 24" data-icon="megaphone" fill="none" role="img">
+  <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"></path>
+
+</svg>
+
+        <span class="ml-2">What's new</span>
+      </div>
+    <a class="announcekit-widget-badge announcekit-minimalist-1740214267228-8385" target="_blank" href="https://changelog.software.com" style="flex: 0 0 0%; width: 0px; height: 0px; cursor: pointer; padding: 0px; position: relative; vertical-align: middle; visibility: visible; margin: 0px;">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" height="0px" width="0px" style="width: 0px;height: 0px;">
+      <g text-anchor="middle" font-weight="bold" font-family="-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&quot;Helvetica Neue&quot;,sans-serif;" text-rendering="geometricPrecision" font-size="60">
+        <circle r="50" cx="50" cy="50" fill="#00b4ee"></circle>
+        <text x="50" y="70" textLength="70" fill="#ffffff"></text>
+      </g>
+    </svg>
+  </a></a>
+
+    <div class="flex items-center cursor-pointer btn-left-nav" title="Help" data-action="click->application#openBeacon">
+      <svg class="pointer-events-none h-5 w-5" viewBox="0 0 24 24" data-icon="question_mark_circle" fill="none" role="img">
+  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"></path>
+
+</svg>
+
+      <span class="ml-2">Help</span>
+    </div>
+
+      <a class="flex items-center cursor-pointer btn-left-nav " title="Settings" href="/code_time/settings">
+        <svg class="pointer-events-none h-5 w-5" viewBox="0 0 24 24" data-icon="cog_8_tooth" fill="none" role="img">
+  <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"></path>
+<path stroke="currentColor" stroke-width=" 1.5" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+
+</svg>
+
+        <span class="ml-2">Settings</span>
+</a>
+    <hr class="border-t border-gray-600 lg:mb-0 dark:border-gray-800">
+
+      <a class="btn-left-nav" title="Software.com" href="/organizations">
+        <div class="flex items-center">
+          <img class="w-5" src="https://d20qih2bscj2of.cloudfront.net/assets/software-paw-49a203d4453ed955f05b8faea4a8eacc8b62eb7a28baa299527dd7fe2a8f2e62.png">
+          <span class="flex items-center justify-between w-full">
+            <span class="ml-2">Software.com</span>
+            <svg class="pointer-events-none h-4 w-4" viewBox="0 0 24 24" data-icon="arrow_right" fill="none" role="img">
+  <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+
+</svg>
+
+          </span>
+        </div>
+</a>
+    <div class="flex items-center justify-between py-4 pl-4 pr-3 bg-gray-800">
+      <div class="space-y-1">
+        <p class="text-sm font-medium text-white truncate">Yasin Ünal</p>
+        <p class="text-xs font-medium text-gray-300 truncate" title="yasin.unal@bil.omu.edu.tr">yasin.unal@bil.omu.edu.tr</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="relative flex items-center" data-controller="toggle-visibility" data-toggle-visibility-click-outside-enabled-value="true" data-toggle-visibility-toggle-class="hidden" data-toggle-visibility-click-outside-prevent-default-enabled-value="false" data-on-render="hide">
+          <button class="rounded hover:bg-gray-700" data-action="click->toggle-visibility#toggle:prevent">
+            <svg class="pointer-events-none h-6 w-6 text-gray-400" viewBox="0 0 24 24" data-icon="ellipsis_vertical" fill="none" role="img">
+  <path fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
+
+</svg>
+
+          </button>
+          <div class="absolute z-20 hidden w-48 text-white -top-28 -right-1" data-toggle-visibility-target="toggle">
+            <div class="z-30 flex flex-col w-full gap-2 bg-gray-800 border border-gray-600 rounded shadow">
+              <div class="flex items-center gap-2 px-3 py-2 text-sm cursor-pointer hover:bg-gray-700">
+                <div class="flex items-center justify-center" data-controller="dark-mode">
+  <label class="flex items-center cursor-pointer">
+    <!-- toggle -->
+    <div class="relative">
+      <input type="checkbox" class="sr-only peer" data-action="click->dark-mode#toggleDarkMode" data-dark-mode-target="darkModeCheckbox">
+      <!-- line -->
+      <div class="w-10 h-2 bg-gray-400 rounded-full shadow-inner"></div>
+      <!-- images -->
+      <div class="absolute h-5 w-5 bg-transparent rounded-full shadow left-0 -top-1.5 transition peer-checked:translate-x-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden dark:block h-5 w-5 absolute rounded-full p-1 shadow bg-gray-800 text-blue-500" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="dark:hidden h-5 w-5 rounded-full p-1 shadow bg-white text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
+    </div>
+
+    <span class="ml-2">Theme</span>
+  </label>
+</div>
+
+              </div>
+
+
+              <a data-turbo-method="delete" class="flex items-center gap-2 cursor-pointer px-3 py-2 text-sm hover:bg-gray-700 whitespace-nowrap" role="menuitem" href="/logout">
+                <svg class="pointer-events-none h-4 w-4 text-gray-300" viewBox="0 0 24 24" data-icon="arrow_left_on_rectangle" fill="none" role="img">
+  <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"></path>
+
+</svg>
+
+                Log out
+</a>            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+      <main class="w-full pb-24 overflow-y-auto md:pb-0">
+        
+<div class="p-4 px-10 flex flex-col gap-3">
+  <h1 class="text-xl font-semibold" data-controller="plugin-oauth" data-plugin-oauth-deep-link-url-value="">Dashboard</h1>
+
+  <div class="flex items-center gap-1">
+  <div class="relative z-0 inline-flex -space-x-px border border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-md overflow-hidden" aria-label="date-selector">
+    <a class="prev-week-selector relative inline-flex items-center px-2 py-2 text-sm font-medium dark:text-gray-300 text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 focus:bg-gray-100 dark:focus:bg-gray-600" href="/code_time?week_of=2025-01-13">
+      <span class="sr-only">Previous</span>
+      <svg class="pointer-events-none w-4 h-4" viewBox="0 0 24 24" data-icon="chevron_left" fill="none" role="img">
+  <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+
+</svg>
+
+</a>
+    <div class="text-sm inline-flex items-center px-2 py-2 dark:text-white cursor-default w-36">
+      <svg class="pointer-events-none w-4 h-4 text-gray-500" viewBox="0 0 24 24" data-icon="calendar" fill="none" role="img">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path>
+
+</svg>
+
+      <span class="m-auto">
+        Jan 20 - Jan 26
+      </span>
+    </div>
+
+      <a class="next-week-selector relative inline-flex items-center px-2 py-2 text-sm font-medium dark:text-gray-300 text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 focus:bg-gray-100 dark:focus:bg-gray-600" href="/code_time?week_of=2025-01-27">
+        <span class="sr-only">Next</span>
+        <svg class="pointer-events-none w-4 h-4" viewBox="0 0 24 24" data-icon="chevron_right" fill="none" role="img">
+  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+
+</svg>
+
+</a>  </div>
+
+  <div class="hidden md:flex items-end">
+    <a class="relative inline-flex items-center grow-0 px-3 py-2 text-sm font-medium bg-white border border-gray-300 rounded-md sm:ml-2 dark:border-gray-800 dark:bg-gray-800 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-700 hover:bg-gray-50 focus:bg-gray-100" href="/code_time">This Week</a>
+  </div>
+</div>
+
+
+  <turbo-frame id="code_time_dashboard_cards" src="https://app.software.com/dashboard/code_time/cards?week_of=2025-01-20" complete="">
+  
+<div class="p-6 bg-white border dark:bg-gray-800 border-gray-200 dark:border-gray-700 rounded-md">
+  <h1 class="font-medium">Weekly Summary</h1>
+  <div class="grid mt-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="border-gray-200 dark:border-gray-700 py-4 xl:py-0 border-b sm:border-b-0 lg:pr-2">
+      <div class="mb-2 flex items-center justify-between">
+        <h2 class="text-sm font-semibold dark:text-white">Code Time</h2>
+      </div>
+
+      <div>
+  <div class="flex items-center gap-2 pb-2">
+    <h3 class="font-semibold text-xl xl:text-2xl">
+      19h 16m
+    </h3>
+    <span class="text-xs text-gray-500 dark:text-gray-400">
+      in your editor
+    </span>
+  </div>
+    <div class="flex items-center gap-2 text-xs">
+      <span class="text-gray-500 dark:text-gray-400">
+        Daily average
+      </span>
+      <span class="font-medium">
+        2h 45m
+      </span>
+    </div>
+</div>
+
+    </div>
+
+    <div class="sm:pl-4 border-gray-200 dark:border-gray-700 py-4 xl:py-0 border-b sm:border-l sm:border-b-0 lg:pr-2">
+      <div class="mb-2 flex items-center justify-between">
+        <h2 class="text-sm font-semibold dark:text-white">Active Code Time</h2>
+      </div>
+
+      <div>
+  <div class="flex items-center gap-2 pb-2">
+    <h3 class="font-semibold text-xl xl:text-2xl">
+      10h 22m
+    </h3>
+    <span class="text-xs text-gray-500 dark:text-gray-400">
+      writing code
+    </span>
+  </div>
+    <div class="flex items-center gap-2 text-xs">
+      <span class="text-gray-500 dark:text-gray-400">
+        Daily average
+      </span>
+      <span class="font-medium">
+        1h 28m
+      </span>
+    </div>
+</div>
+
+    </div>
+
+    <div class="border-gray-200 dark:border-gray-700 py-4 xl:py-0 border-b lg:border-l lg:pl-4 sm:border-b-0 lg:pr-2">
+      <div class="mb-2 flex items-center justify-between">
+        <h2 class="text-sm font-semibold dark:text-white">Coding at Work</h2>
+      </div>
+
+      <div>
+  <div class="flex items-center gap-2 pb-2">
+    <h3 class="font-semibold text-xl xl:text-2xl">
+      32%
+    </h3>
+    <span class="text-xs text-gray-500 dark:text-gray-400">
+      of total coding took place during work hours
+    </span>
+  </div>
+    <div class="flex items-center gap-2 text-xs">
+      <span class="text-gray-500 dark:text-gray-400">
+        Avg time per day coding outside work
+      </span>
+      <span class="font-medium">
+        1h 52m
+      </span>
+    </div>
+</div>
+
+    </div>
+
+    <div class="sm:pl-4 border-gray-200 dark:border-gray-700 py-4 xl:py-0 sm:border-l lg:pr-2">
+      <div class="mb-2 flex items-center justify-between">
+        <h2 class="text-sm font-semibold dark:text-white">Meeting Time</h2>
+      </div>
+
+      <div>
+  <div class="flex items-center gap-2 pb-2">
+    <h3 class="font-semibold text-xl xl:text-2xl">
+      0m
+    </h3>
+    <span class="text-xs text-gray-500 dark:text-gray-400">
+      in meetings
+    </span>
+  </div>
+    <div class="flex items-center gap-2 text-xs">
+      <span class="text-gray-500 dark:text-gray-400">
+        Daily average
+      </span>
+      <span class="font-medium">
+        0m
+      </span>
+    </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+</turbo-frame>
+  <div class="grid grid-cols-1 gap-3 lg:grid-cols-2">
+    <div class="flex flex-col p-6 bg-white border rounded-md dark:border-gray-800 dark:bg-gray-800 group/card">
+      <turbo-frame id="active_code_time_graph" src="https://app.software.com/dashboard/components/active_code_time_graph?week_of=2025-01-20" complete="">
+  <div data-turbo-temporary="" class="bg-white dark:bg-gray-800 p-6 rounded-md flex flex-col gap-3">
+    <h1 class="font-medium">Daily Code Time</h1>
+    <div data-controller="graph-legend">
+    <div class="flex items-center justify-between gap-2 pt-2 pb-6 min-h-12">
+        <div class="flex flex-wrap gap-x-4 gap-y-1 ">
+            <div class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer dark:text-gray-400 group hover:font-semibold" data-action="mouseover->graph-legend#legendMouseOver mouseout->graph-legend#legendMouseOut click->graph-legend#toggleSeries" data-series-name="Code Time">
+    <div class="h-3 w-3 rounded-sm bg-blue-200 group-[.invisible-series]:bg-gray-300 group-[.invisible-series]:dark:bg-gray-600"></div>
+  <div class="flex items-center gap-1 whitespace-nowrap group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">
+    <span>Code Time</span>
+    <span class="font-semibold"></span>
+  </div>
+</div>
+
+            <div class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer dark:text-gray-400 group hover:font-semibold" data-action="mouseover->graph-legend#legendMouseOver mouseout->graph-legend#legendMouseOut click->graph-legend#toggleSeries" data-series-name="Active Code Time">
+    <div class="h-3 w-3 rounded-sm bg-blue-500 group-[.invisible-series]:bg-gray-300 group-[.invisible-series]:dark:bg-gray-600"></div>
+  <div class="flex items-center gap-1 whitespace-nowrap group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">
+    <span>Active Code Time</span>
+    <span class="font-semibold"></span>
+  </div>
+</div>
+
+            <div class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer dark:text-gray-400 group hover:font-semibold" data-action="mouseover->graph-legend#legendMouseOver mouseout->graph-legend#legendMouseOut click->graph-legend#toggleSeries" data-series-name="Flow Time">
+    <div class="h-0.5 w-5 rounded-sm bg-indigo-500 group-[.invisible-series]:bg-gray-300 group-[.invisible-series]:dark:bg-gray-600"></div>
+  <div class="flex items-center gap-1 whitespace-nowrap group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">
+    <span>Flow Time</span>
+    <span class="font-semibold"></span>
+  </div>
+</div>
+
+            <div class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer dark:text-gray-400 group hover:font-semibold" data-action="mouseover->graph-legend#legendMouseOver mouseout->graph-legend#legendMouseOut click->graph-legend#toggleSeries" data-series-name="Your 90-day avg">
+    <div class="whitespace-nowrap text-base font-semibold text-yellow-500 group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">---</div>
+  <div class="flex items-center gap-1 whitespace-nowrap group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">
+    <span>Your 90-day avg</span>
+    <span class="font-semibold"></span>
+  </div>
+</div>
+
+            <div class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer dark:text-gray-400 group hover:font-semibold" data-action="mouseover->graph-legend#legendMouseOver mouseout->graph-legend#legendMouseOut click->graph-legend#toggleSeries" data-series-name="Global 90-day avg">
+    <div class="whitespace-nowrap text-base font-semibold text-teal-500 group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">---</div>
+  <div class="flex items-center gap-1 whitespace-nowrap group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">
+    <span>Global 90-day avg</span>
+    <span class="font-semibold"></span>
+  </div>
+</div>
+
+        </div>
+    </div>
+  <div class="relative">
+    <div class="">
+        <div data-controller="active-code-time-graph" data-active-code-time-graph-chart-data-value="{&quot;active_code_time&quot;:[11.733333,17.2,264.266667,89.9,0.866667,173.183334,65.483334],&quot;code_time&quot;:[{&quot;y&quot;:29.299999999999997,&quot;tooltip_y_value&quot;:41.033333},{&quot;y&quot;:40.86666700000001,&quot;tooltip_y_value&quot;:58.066667},{&quot;y&quot;:94.183333,&quot;tooltip_y_value&quot;:358.45},{&quot;y&quot;:68.683334,&quot;tooltip_y_value&quot;:158.583334},{&quot;y&quot;:146.85,&quot;tooltip_y_value&quot;:147.716667},{&quot;y&quot;:96.33333299999998,&quot;tooltip_y_value&quot;:269.516667},{&quot;y&quot;:57.766667,&quot;tooltip_y_value&quot;:123.250001}],&quot;avg_90_day&quot;:[164.161110917,115.991666917,130.936111,118.729166417,128.301389083,22.887500083,78.490277917],&quot;global_avg&quot;:[27.710654489923087,27.86179683756333,26.794137689454743,28.194611872288597,25.124466441392244,15.606878999856946,15.696470215100572],&quot;flow_time&quot;:[0.2,0.5,1.5,0,0,0.9,0],&quot;max_y&quot;:358.45}" data-active-code-time-graph-options-value="{}" data-active-code-time-graph-annotations-outlet="[data-controller='annotations']" data-active-code-time-graph-date-range-outlet="[data-controller='date-range']" data-graph-legend-target="chart" class="w-full h-80 relative" data-highcharts-chart="0" aria-hidden="false" role="region" aria-label="Chart. Highcharts interactive chart." style="overflow: visible;"><div id="highcharts-screen-reader-region-before-0" aria-hidden="false" style="position: relative;"><div style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;" aria-hidden="false"><h2>Chart</h2><div>Combination chart with 5 data series.</div><div>The chart has 1 X axis displaying categories. </div><div>The chart has 1 Y axis displaying values. Data ranges from 0.2 to 358.45.</div></div></div><div aria-hidden="false" class="highcharts-announcer-container" style="position: relative;"><div aria-hidden="false" aria-live="polite" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div><div aria-hidden="false" aria-live="assertive" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div><div aria-hidden="false" aria-live="polite" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div><div aria-hidden="false" aria-live="polite" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div></div><div id="highcharts-9sssptf-0" dir="ltr" style="position: relative; overflow: visible; width: 688px; height: 320px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none; padding: 0px; font-family: Inter, Helvetica, Arial, sans-serif;" class="highcharts-container " aria-hidden="false" tabindex="0"><div aria-hidden="false" class="highcharts-a11y-proxy-container-before" style="top: 0px; left: 0px; white-space: nowrap; position: absolute;"></div><svg version="1.1" class="highcharts-root" style="font-family: Inter, Helvetica, Arial, sans-serif; font-size: 1rem; overflow: visible;" xmlns="http://www.w3.org/2000/svg" width="688" height="320" viewBox="0 0 688 320" aria-hidden="false" aria-label="Interactive chart"><desc aria-hidden="true">Created with Highcharts 11.4.8</desc><defs aria-hidden="true"><filter id="highcharts-drop-shadow-0"><feDropShadow dx="1" dy="1" flood-color="#000000" flood-opacity="0.75" stdDeviation="2.5"></feDropShadow></filter><clipPath id="highcharts-9sssptf-8-"><rect x="0" y="0" width="654" height="270" fill="none"></rect></clipPath><clipPath id="highcharts-9sssptf-39-"><rect x="34" y="10" width="654" height="270" fill="none"></rect></clipPath></defs><rect fill="transparent" class="highcharts-background" filter="none" x="0" y="0" width="688" height="320" rx="0" ry="0" aria-hidden="true"></rect><rect fill="none" class="highcharts-plot-background" x="34" y="10" width="654" height="270" filter="none" aria-hidden="true"></rect><g class="highcharts-pane-group" data-z-index="0" aria-hidden="true"></g><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1" aria-hidden="true"><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 127.5 10 L 127.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 220.5 10 L 220.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 314.5 10 L 314.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 407.5 10 L 407.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 501.5 10 L 501.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 594.5 10 L 594.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 688.5 10 L 688.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34.5 10 L 34.5 280" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1" aria-hidden="true"><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 280.5 L 688 280.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 241.5 L 688 241.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 202.5 L 688 202.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 164.5 L 688 164.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 125.5 L 688 125.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 87.5 L 688 87.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 48.5 L 688 48.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 10.5 L 688 10.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" stroke="#cccccc" stroke-width="0" x="34" y="10" width="654" height="270" aria-hidden="true"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2" aria-hidden="true"><path fill="none" class="highcharts-axis-line" stroke="#E6E6E6" stroke-width="1" data-z-index="7" d="M 34 280.5 L 688 280.5"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2" aria-hidden="true"><path fill="none" class="highcharts-axis-line" stroke="#333333" stroke-width="0" data-z-index="7" d="M 34 10 L 34 280"></path></g><g class="highcharts-series-group" data-z-index="3" filter="none" aria-hidden="false"><g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="url(#highcharts-9sssptf-8-)" aria-hidden="false" role="region" tabindex="-1" aria-label="Code Time, series 1 of 5. Bar series with 7 bars." style="outline: none;"><path fill="#BFE2FF" d="M 21.81714285714314 243.62142878571 L 71.81714285714314 243.62142878571 C 74.31714285714314 243.62142878571 76.81714285714314 246.12142878571 76.81714285714314 248.62142878571 L 76.81714285714314 262.45714307143 C 76.81714285714314 262.45714307143 76.81714285714314 262.45714307143 76.81714285714314 262.45714307143 L 16.81714285714314 262.45714307143 C 16.81714285714314 262.45714307143 16.81714285714314 262.45714307143 16.81714285714314 262.45714307143 L 16.81714285714314 248.62142878571 C 16.81714285714314 246.12142878571 19.31714285714314 243.62142878571 21.81714285714314 243.62142878571 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Mon, 29.299999999999997. Code Time." style="outline: none;"></path><path fill="#BFE2FF" d="M 115.24571428571716 232.67142835714 L 165.24571428571716 232.67142835714 C 167.74571428571716 232.67142835714 170.24571428571716 235.17142835714 170.24571428571716 237.67142835714 L 170.24571428571716 258.94285714286 C 170.24571428571716 258.94285714286 170.24571428571716 258.94285714286 170.24571428571716 258.94285714286 L 110.24571428571716 258.94285714286 C 110.24571428571716 258.94285714286 110.24571428571716 258.94285714286 110.24571428571716 258.94285714286 L 110.24571428571716 237.67142835714 C 110.24571428571716 235.17142835714 112.74571428571716 232.67142835714 115.24571428571716 232.67142835714 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Tue, 40.86666700000001. Code Time." style="outline: none;"></path><path fill="#BFE2FF" d="M 208.67428571428715 39.567857142857 L 258.6742857142872 39.567857142857 C 261.1742857142872 39.567857142857 263.6742857142872 42.067857142857 263.6742857142872 44.567857142857 L 263.6742857142872 100.1142855 C 263.6742857142872 100.1142855 263.6742857142872 100.1142855 263.6742857142872 100.1142855 L 203.67428571428715 100.1142855 C 203.67428571428715 100.1142855 203.67428571428715 100.1142855 203.67428571428715 100.1142855 L 203.67428571428715 44.567857142857 C 203.67428571428715 42.067857142857 206.17428571428715 39.567857142857 208.67428571428715 39.567857142857 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Wed, 94.183333. Code Time." style="outline: none;"></path><path fill="#BFE2FF" d="M 302.10285714285715 168.053571 L 352.10285714285715 168.053571 C 354.60285714285715 168.053571 357.10285714285715 170.553571 357.10285714285715 173.053571 L 357.10285714285715 212.20714285714 C 357.10285714285715 212.20714285714 357.10285714285715 212.20714285714 357.10285714285715 212.20714285714 L 297.10285714285715 212.20714285714 C 297.10285714285715 212.20714285714 297.10285714285715 212.20714285714 297.10285714285715 212.20714285714 L 297.10285714285715 173.053571 C 297.10285714285715 170.553571 299.60285714285715 168.053571 302.10285714285715 168.053571 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Thu, 68.683334. Code Time." style="outline: none;"></path><path fill="#BFE2FF" d="M 395.53142857142717 175.0392855 L 445.53142857142717 175.0392855 C 448.03142857142717 175.0392855 450.53142857142717 177.5392855 450.53142857142717 180.0392855 L 450.53142857142717 269.44285692857 C 450.53142857142717 269.44285692857 450.53142857142717 269.44285692857 450.53142857142717 269.44285692857 L 390.53142857142717 269.44285692857 C 390.53142857142717 269.44285692857 390.53142857142717 269.44285692857 390.53142857142717 269.44285692857 L 390.53142857142717 180.0392855 C 390.53142857142717 177.5392855 393.03142857142717 175.0392855 395.53142857142717 175.0392855 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Fri, 146.85. Code Time." style="outline: none;"></path><path fill="#BFE2FF" d="M 488.9599999999972 96.7392855 L 538.9599999999972 96.7392855 C 541.4599999999972 96.7392855 543.9599999999972 99.2392855 543.9599999999972 101.7392855 L 543.9599999999972 158.66785671429 C 543.9599999999972 158.66785671429 543.9599999999972 158.66785671429 543.9599999999972 158.66785671429 L 483.9599999999972 158.66785671429 C 483.9599999999972 158.66785671429 483.9599999999972 158.66785671429 483.9599999999972 158.66785671429 L 483.9599999999972 101.7392855 C 483.9599999999972 99.2392855 486.4599999999972 96.7392855 488.9599999999972 96.7392855 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Sat, 96.33333299999998. Code Time." style="outline: none;"></path><path fill="#BFE2FF" d="M 582.3885714285672 190.7678565 L 632.3885714285672 190.7678565 C 634.8885714285672 190.7678565 637.3885714285672 193.2678565 637.3885714285672 195.7678565 L 637.3885714285672 227.903571 C 637.3885714285672 227.903571 637.3885714285672 227.903571 637.3885714285672 227.903571 L 577.3885714285672 227.903571 C 577.3885714285672 227.903571 577.3885714285672 227.903571 577.3885714285672 227.903571 L 577.3885714285672 195.7678565 C 577.3885714285672 193.2678565 579.8885714285672 190.7678565 582.3885714285672 190.7678565 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Sun, 57.766667. Code Time." style="outline: none;"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="url(#highcharts-9sssptf-8-)" aria-hidden="false" role="region" tabindex="-1" aria-label="Active Code Time, series 2 of 5. Bar series with 7 bars." style="outline: none;"><path fill="#0896FC" d="M 16.81714285714314 262.45714307143 L 76.81714285714314 262.45714307143 A 0 0 0 0 1 76.81714285714314 262.45714307143 L 76.81714285714314 270 A 0 0 0 0 1 76.81714285714314 270 L 16.81714285714314 270 A 0 0 0 0 1 16.81714285714314 270 L 16.81714285714314 262.45714307143 A 0 0 0 0 1 16.81714285714314 262.45714307143 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Mon, 11.733333. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 110.24571428571716 258.94285714286 L 170.24571428571716 258.94285714286 A 0 0 0 0 1 170.24571428571716 258.94285714286 L 170.24571428571716 270 A 0 0 0 0 1 170.24571428571716 270 L 110.24571428571716 270 A 0 0 0 0 1 110.24571428571716 270 L 110.24571428571716 258.94285714286 A 0 0 0 0 1 110.24571428571716 258.94285714286 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Tue, 17.2. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 203.67428571428715 100.1142855 L 263.6742857142872 100.1142855 A 0 0 0 0 1 263.6742857142872 100.1142855 L 263.6742857142872 270 A 0 0 0 0 1 263.6742857142872 270 L 203.67428571428715 270 A 0 0 0 0 1 203.67428571428715 270 L 203.67428571428715 100.1142855 A 0 0 0 0 1 203.67428571428715 100.1142855 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Wed, 264.266667. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 297.10285714285715 212.20714285714 L 357.10285714285715 212.20714285714 A 0 0 0 0 1 357.10285714285715 212.20714285714 L 357.10285714285715 270 A 0 0 0 0 1 357.10285714285715 270 L 297.10285714285715 270 A 0 0 0 0 1 297.10285714285715 270 L 297.10285714285715 212.20714285714 A 0 0 0 0 1 297.10285714285715 212.20714285714 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Thu, 89.9. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 390.53142857142717 269.44285692857 L 450.53142857142717 269.44285692857 A 0 0 0 0 1 450.53142857142717 269.44285692857 L 450.53142857142717 270 A 0 0 0 0 1 450.53142857142717 270 L 390.53142857142717 270 A 0 0 0 0 1 390.53142857142717 270 L 390.53142857142717 269.44285692857 A 0 0 0 0 1 390.53142857142717 269.44285692857 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Fri, 0.866667. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 483.9599999999972 158.66785671429 L 543.9599999999972 158.66785671429 A 0 0 0 0 1 543.9599999999972 158.66785671429 L 543.9599999999972 270 A 0 0 0 0 1 543.9599999999972 270 L 483.9599999999972 270 A 0 0 0 0 1 483.9599999999972 270 L 483.9599999999972 158.66785671429 A 0 0 0 0 1 483.9599999999972 158.66785671429 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Sat, 173.183334. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 577.3885714285672 227.903571 L 637.3885714285672 227.903571 A 0 0 0 0 1 637.3885714285672 227.903571 L 637.3885714285672 270 A 0 0 0 0 1 637.3885714285672 270 L 577.3885714285672 270 A 0 0 0 0 1 577.3885714285672 270 L 577.3885714285672 227.903571 A 0 0 0 0 1 577.3885714285672 227.903571 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Sun, 65.483334. Active Code Time." style="outline: none;"></path></g><g class="highcharts-markers highcharts-series-1 highcharts-column-series" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-2 highcharts-solid-jump-line-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="url(#highcharts-9sssptf-8-)" aria-hidden="false" role="region" tabindex="-1" aria-label="Flow Time, series 3 of 5 with 7 data points." style="outline: none;"><path fill="#6366F1" d="M 16.81714285714314 266.87142857143 L 76.81714285714314 266.87142857143 A 0 0 0 0 1 76.81714285714314 266.87142857143 L 76.81714285714314 269.87142857143 A 0 0 0 0 1 76.81714285714314 269.87142857143 L 16.81714285714314 269.87142857143 A 0 0 0 0 1 16.81714285714314 269.87142857143 L 16.81714285714314 266.87142857143 A 0 0 0 0 1 16.81714285714314 266.87142857143 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Mon, 0.2. Flow Time." style="outline: none;"></path><path fill="#6366F1" d="M 110.24571428571716 266.67857142857 L 170.24571428571716 266.67857142857 A 0 0 0 0 1 170.24571428571716 266.67857142857 L 170.24571428571716 269.67857142857 A 0 0 0 0 1 170.24571428571716 269.67857142857 L 110.24571428571716 269.67857142857 A 0 0 0 0 1 110.24571428571716 269.67857142857 L 110.24571428571716 266.67857142857 A 0 0 0 0 1 110.24571428571716 266.67857142857 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Tue, 0.5. Flow Time." style="outline: none;"></path><path fill="#6366F1" d="M 203.67428571428715 266.03571428571 L 263.6742857142872 266.03571428571 A 0 0 0 0 1 263.6742857142872 266.03571428571 L 263.6742857142872 269.03571428571 A 0 0 0 0 1 263.6742857142872 269.03571428571 L 203.67428571428715 269.03571428571 A 0 0 0 0 1 203.67428571428715 269.03571428571 L 203.67428571428715 266.03571428571 A 0 0 0 0 1 203.67428571428715 266.03571428571 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Wed, 1.5. Flow Time." style="outline: none;"></path><rect x="327" y="269.42142857143" width="1" height="1" fill="none" class="highcharts-a11y-mock-point" opacity="0" fill-opacity="0" stroke-opacity="0" tabindex="-1" role="img" aria-label="Thu, No value. Flow Time." style="outline: none;"></rect><rect x="420.42857142857" y="269.42142857143" width="1" height="1" fill="none" class="highcharts-a11y-mock-point" opacity="0" fill-opacity="0" stroke-opacity="0" tabindex="-1" role="img" aria-label="Fri, No value. Flow Time." style="outline: none;"></rect><path fill="#6366F1" d="M 483.9599999999972 266.42142857143 L 543.9599999999972 266.42142857143 A 0 0 0 0 1 543.9599999999972 266.42142857143 L 543.9599999999972 269.42142857143 A 0 0 0 0 1 543.9599999999972 269.42142857143 L 483.9599999999972 269.42142857143 A 0 0 0 0 1 483.9599999999972 269.42142857143 L 483.9599999999972 266.42142857143 A 0 0 0 0 1 483.9599999999972 266.42142857143 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Sat, 0.9. Flow Time." style="outline: none;"></path><rect x="607.28571428571" y="0" width="1" height="1" fill="none" class="highcharts-a11y-mock-point" opacity="0" fill-opacity="0" stroke-opacity="0" tabindex="-1" role="img" aria-label="Sun, No value. Flow Time." style="outline: none;"></rect></g><g class="highcharts-markers highcharts-series-2 highcharts-solid-jump-line-series" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-3 highcharts-line-series" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="url(#highcharts-9sssptf-8-)" aria-hidden="true"><path fill="none" d="M 46.714285714286 252.18600782791 L 140.14285714286 252.08884489014 L 233.57142857143 252.77519719964 L 327 251.87489236781 L 420.42857142857 253.84855728768 L 513.85714285714 259.96700635723 L 607.28571428571 259.90941200458" class="highcharts-graph" data-z-index="1" stroke="#14B8A6" stroke-width="2" stroke-dasharray="8,6" filter="none"></path><path fill="none" d="M 46.714285714286 252.18600782791 L 140.14285714286 252.08884489014 L 233.57142857143 252.77519719964 L 327 251.87489236781 L 420.42857142857 253.84855728768 L 513.85714285714 259.96700635723 L 607.28571428571 259.90941200458" data-z-index="2" class="highcharts-tracker-line" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22"></path></g><g class="highcharts-markers highcharts-series-3 highcharts-line-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="none" aria-hidden="false" role="region" tabindex="-1" aria-label="Global 90-day avg, series 4 of 5. Line with 7 data points." style="outline: none;"><path fill="#14B8A6" d="M 46.5 256.18600782791 A 4 4 0 1 1 46.500199999999914 256.18600782291 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Mon, 27.710654489923087. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 140.5 256.08884489013997 A 4 4 0 1 1 140.50019999999992 256.08884488514 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Tue, 27.86179683756333. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 233.5 256.77519719964 A 4 4 0 1 1 233.50019999999992 256.77519719464 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Wed, 26.794137689454743. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 327.5 255.87489236781 A 4 4 0 1 1 327.5001999999999 255.87489236281 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Thu, 28.194611872288597. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 420.5 257.84855728768 A 4 4 0 1 1 420.5001999999999 257.84855728268 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Fri, 25.124466441392244. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 513.5 263.96700635723 A 4 4 0 1 1 513.5002 263.96700635223 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Sat, 15.606878999856946. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 607.5 263.90941200458 A 4 4 0 1 1 607.5002 263.90941199958 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Sun, 15.696470215100572. Global 90-day avg." style="outline: none;"></path></g><g class="highcharts-series highcharts-series-4 highcharts-jump-line-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="url(#highcharts-9sssptf-8-)" aria-hidden="false" role="region" tabindex="-1" aria-label="Your 90-day avg, series 5 of 5 with 7 data points." style="outline: none;"><path fill="none" d="M 16.81714285714314 161.46785726764 h 59.79428571428572" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 110.24571428571716 192.4339284105 h 59.79428571428572" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 203.67428571428715 182.82678578571 h 59.79428571428572" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 297.10285714285715 190.67410730336 h 59.79428571428572" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 390.53142857142717 184.5205355895 h 59.79428571428572" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 483.9599999999972 252.2866070895 h 59.79428571428572" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 577.3885714285672 216.54196419621 h 59.79428571428572" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path></g><g class="highcharts-markers highcharts-series-4 highcharts-jump-line-series" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="none" aria-hidden="true"></g></g><text x="344" text-anchor="middle" class="highcharts-title" data-z-index="4" style="font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);" y="25" aria-hidden="true"></text><text x="344" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="24" aria-hidden="true"></text><text x="0" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="322" aria-hidden="true"></text><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7" aria-hidden="true"><text x="80.71428571428427" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Mon</text><text x="174.14285714285427" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Tue</text><text x="267.5714285714243" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Wed</text><text x="361.00000000000426" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Thu</text><text x="454.4285714285743" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Fri</text><text x="547.8571428571444" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Sat</text><text x="641.2857142857143" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Sun</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7" aria-hidden="true"><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="285" opacity="1">0m</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="246" opacity="1">1h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="207" opacity="1">2h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="169" opacity="1">3h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="130" opacity="1">4h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="92" opacity="1">5h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="53" opacity="1">6h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="15" opacity="1">7h</text></g><g class="highcharts-control-points" data-z-index="99" clip-path="url(#highcharts-9sssptf-39-)" aria-hidden="true"></g></svg><div aria-hidden="false" class="highcharts-a11y-proxy-container-after" style="top: 0px; left: 0px; white-space: nowrap; position: absolute;"><div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-zoom"></div><div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-chartMenu"></div></div></div><div id="highcharts-screen-reader-region-after-0" aria-hidden="false" style="position: relative;"><div style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;" aria-hidden="false"><div id="highcharts-end-of-chart-marker-0" class="highcharts-exit-anchor" tabindex="0" aria-hidden="false">End of interactive chart.</div></div></div></div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</turbo-frame>    </div>
+    <div class="flex flex-col p-6 bg-white border rounded-md dark:border-gray-800 dark:bg-gray-800 group/card">
+      <turbo-frame id="meeting_time_vs_code_time_graph" src="https://app.software.com/dashboard/components/meeting_time_vs_code_time_graph?week_of=2025-01-20" complete="">
+  <div data-turbo-temporary="" class="bg-white dark:bg-gray-800 p-6 rounded-md flex flex-col gap-3">
+    <h1 class="font-medium">Meeting Time vs. Active Code Time</h1>
+    <div data-controller="graph-legend">
+    <div class="flex items-center justify-between gap-2 pt-2 pb-6 min-h-12">
+        <div class="flex flex-wrap gap-x-4 gap-y-1 ">
+            <div class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer dark:text-gray-400 group hover:font-semibold" data-action="mouseover->graph-legend#legendMouseOver mouseout->graph-legend#legendMouseOut click->graph-legend#toggleSeries" data-series-name="Meeting Time">
+    <div class="h-3 w-3 rounded-sm bg-gray-500 group-[.invisible-series]:bg-gray-300 group-[.invisible-series]:dark:bg-gray-600"></div>
+  <div class="flex items-center gap-1 whitespace-nowrap group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">
+    <span>Meeting Time</span>
+    <span class="font-semibold"></span>
+  </div>
+</div>
+
+            <div class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer dark:text-gray-400 group hover:font-semibold" data-action="mouseover->graph-legend#legendMouseOver mouseout->graph-legend#legendMouseOut click->graph-legend#toggleSeries" data-series-name="Active Code Time">
+    <div class="h-3 w-3 rounded-sm bg-blue-500 group-[.invisible-series]:bg-gray-300 group-[.invisible-series]:dark:bg-gray-600"></div>
+  <div class="flex items-center gap-1 whitespace-nowrap group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">
+    <span>Active Code Time</span>
+    <span class="font-semibold"></span>
+  </div>
+</div>
+
+            <div class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer dark:text-gray-400 group hover:font-semibold" data-action="mouseover->graph-legend#legendMouseOver mouseout->graph-legend#legendMouseOut click->graph-legend#toggleSeries" data-series-name="Your 90-day avg">
+    <div class="whitespace-nowrap text-base font-semibold text-yellow-500 group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">---</div>
+  <div class="flex items-center gap-1 whitespace-nowrap group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">
+    <span>Your 90-day avg</span>
+    <span class="font-semibold"></span>
+  </div>
+</div>
+
+            <div class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer dark:text-gray-400 group hover:font-semibold" data-action="mouseover->graph-legend#legendMouseOver mouseout->graph-legend#legendMouseOut click->graph-legend#toggleSeries" data-series-name="Global 90-day avg">
+    <div class="whitespace-nowrap text-base font-semibold text-teal-500 group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">---</div>
+  <div class="flex items-center gap-1 whitespace-nowrap group-[.invisible-series]:text-gray-300 group-[.invisible-series]:dark:text-gray-600">
+    <span>Global 90-day avg</span>
+    <span class="font-semibold"></span>
+  </div>
+</div>
+
+        </div>
+    </div>
+  <div class="relative">
+    <div class="">
+        <div data-controller="meeting-vs-code-graph" data-meeting-vs-code-graph-chart-data-value="{&quot;active_code_time&quot;:[11.733333,17.2,264.266667,89.9,0.866667,173.183334,65.483334],&quot;meeting_time&quot;:[0.0,0.0,0.0,0.0,0.0,0.0,0.0],&quot;avg_90_day&quot;:[0.0,0.0,0.0,0.0,0.0,0.0,0.0],&quot;global_avg&quot;:[27.516883369327655,26.44535021258924,26.124094116144814,26.57180791502716,25.390161620073922,4.113704503160681,3.5853800409015797],&quot;max_y&quot;:264.266667}" data-meeting-vs-code-graph-options-value="{}" data-meeting-vs-code-graph-annotations-outlet="[data-controller='annotations']" data-meeting-vs-code-graph-date-range-outlet="[data-controller='date-range']" data-graph-legend-target="chart" class="w-full h-80 relative" data-highcharts-chart="1" aria-hidden="false" role="region" aria-label="Chart. Highcharts interactive chart." style="overflow: visible;"><div id="highcharts-screen-reader-region-before-1" aria-hidden="false" style="position: relative;"><div style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;" aria-hidden="false"><h2>Chart</h2><div>Combination chart with 4 data series.</div><div>The chart has 1 X axis displaying categories. </div><div>The chart has 1 Y axis displaying values. Data ranges from 0 to 264.266667.</div></div></div><div aria-hidden="false" class="highcharts-announcer-container" style="position: relative;"><div aria-hidden="false" aria-live="polite" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div><div aria-hidden="false" aria-live="assertive" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div><div aria-hidden="false" aria-live="polite" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div><div aria-hidden="false" aria-live="polite" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;"></div></div><div id="highcharts-9sssptf-40" dir="ltr" style="position: relative; overflow: visible; width: 688px; height: 320px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none; padding: 0px; font-family: Inter, Helvetica, Arial, sans-serif;" class="highcharts-container " aria-hidden="false" tabindex="0"><div aria-hidden="false" class="highcharts-a11y-proxy-container-before" style="top: 0px; left: 0px; white-space: nowrap; position: absolute;"></div><svg version="1.1" class="highcharts-root" style="font-family: Inter, Helvetica, Arial, sans-serif; font-size: 1rem; overflow: visible;" xmlns="http://www.w3.org/2000/svg" width="688" height="320" viewBox="0 0 688 320" aria-hidden="false" aria-label="Interactive chart"><desc aria-hidden="true">Created with Highcharts 11.4.8</desc><defs aria-hidden="true"><filter id="highcharts-drop-shadow-1"><feDropShadow dx="1" dy="1" flood-color="#000000" flood-opacity="0.75" stdDeviation="2.5"></feDropShadow></filter><clipPath id="highcharts-9sssptf-48-"><rect x="0" y="0" width="654" height="270" fill="none"></rect></clipPath><clipPath id="highcharts-9sssptf-72-"><rect x="34" y="10" width="654" height="270" fill="none"></rect></clipPath></defs><rect fill="transparent" class="highcharts-background" filter="none" x="0" y="0" width="688" height="320" rx="0" ry="0" aria-hidden="true"></rect><rect fill="none" class="highcharts-plot-background" x="34" y="10" width="654" height="270" filter="none" aria-hidden="true"></rect><g class="highcharts-pane-group" data-z-index="0" aria-hidden="true"></g><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1" aria-hidden="true"><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 127.5 10 L 127.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 220.5 10 L 220.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 314.5 10 L 314.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 407.5 10 L 407.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 501.5 10 L 501.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 594.5 10 L 594.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 688.5 10 L 688.5 280" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34.5 10 L 34.5 280" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1" aria-hidden="true"><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 280.5 L 688 280.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 226.5 L 688 226.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 172.5 L 688 172.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 118.5 L 688 118.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 64.5 L 688 64.5" opacity="1"></path><path fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 34 10.5 L 688 10.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" stroke="#cccccc" stroke-width="0" x="34" y="10" width="654" height="270" aria-hidden="true"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2" aria-hidden="true"><path fill="none" class="highcharts-axis-line" stroke="#E6E6E6" stroke-width="1" data-z-index="7" d="M 34 280.5 L 688 280.5"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2" aria-hidden="true"><path fill="none" class="highcharts-axis-line" stroke="#333333" stroke-width="0" data-z-index="7" d="M 34 10 L 34 280"></path></g><g class="highcharts-series-group" data-z-index="3" filter="none" aria-hidden="false"><g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="url(#highcharts-9sssptf-48-)" aria-hidden="false" role="region" tabindex="-1" aria-label="Meeting Time, series 1 of 4. Bar series with 7 bars." style="outline: none;"><path fill="#D1D5DB" d="M 21.488571428571714 270 L 44.48857142857172 270 C 44.48857142857172 270 44.48857142857172 270 44.48857142857172 270 L 44.48857142857172 270 C 44.48857142857172 270 44.48857142857172 270 44.48857142857172 270 L 21.488571428571714 270 C 21.488571428571714 270 21.488571428571714 270 21.488571428571714 270 L 21.488571428571714 270 C 21.488571428571714 270 21.488571428571714 270 21.488571428571714 270 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Mon, 0. Meeting Time." style="outline: none;"></path><path fill="#D1D5DB" d="M 114.91714285714572 270 L 137.91714285714573 270 C 137.91714285714573 270 137.91714285714573 270 137.91714285714573 270 L 137.91714285714573 270 C 137.91714285714573 270 137.91714285714573 270 137.91714285714573 270 L 114.91714285714572 270 C 114.91714285714572 270 114.91714285714572 270 114.91714285714572 270 L 114.91714285714572 270 C 114.91714285714572 270 114.91714285714572 270 114.91714285714572 270 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Tue, 0. Meeting Time." style="outline: none;"></path><path fill="#D1D5DB" d="M 208.34571428571573 270 L 231.34571428571573 270 C 231.34571428571573 270 231.34571428571573 270 231.34571428571573 270 L 231.34571428571573 270 C 231.34571428571573 270 231.34571428571573 270 231.34571428571573 270 L 208.34571428571573 270 C 208.34571428571573 270 208.34571428571573 270 208.34571428571573 270 L 208.34571428571573 270 C 208.34571428571573 270 208.34571428571573 270 208.34571428571573 270 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Wed, 0. Meeting Time." style="outline: none;"></path><path fill="#D1D5DB" d="M 301.7742857142857 270 L 324.7742857142857 270 C 324.7742857142857 270 324.7742857142857 270 324.7742857142857 270 L 324.7742857142857 270 C 324.7742857142857 270 324.7742857142857 270 324.7742857142857 270 L 301.7742857142857 270 C 301.7742857142857 270 301.7742857142857 270 301.7742857142857 270 L 301.7742857142857 270 C 301.7742857142857 270 301.7742857142857 270 301.7742857142857 270 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Thu, 0. Meeting Time." style="outline: none;"></path><path fill="#D1D5DB" d="M 395.20285714285575 270 L 418.20285714285575 270 C 418.20285714285575 270 418.20285714285575 270 418.20285714285575 270 L 418.20285714285575 270 C 418.20285714285575 270 418.20285714285575 270 418.20285714285575 270 L 395.20285714285575 270 C 395.20285714285575 270 395.20285714285575 270 395.20285714285575 270 L 395.20285714285575 270 C 395.20285714285575 270 395.20285714285575 270 395.20285714285575 270 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Fri, 0. Meeting Time." style="outline: none;"></path><path fill="#D1D5DB" d="M 488.6314285714258 270 L 511.6314285714258 270 C 511.6314285714258 270 511.6314285714258 270 511.6314285714258 270 L 511.6314285714258 270 C 511.6314285714258 270 511.6314285714258 270 511.6314285714258 270 L 488.6314285714258 270 C 488.6314285714258 270 488.6314285714258 270 488.6314285714258 270 L 488.6314285714258 270 C 488.6314285714258 270 488.6314285714258 270 488.6314285714258 270 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Sat, 0. Meeting Time." style="outline: none;"></path><path fill="#D1D5DB" d="M 582.0599999999957 270 L 605.0599999999957 270 C 605.0599999999957 270 605.0599999999957 270 605.0599999999957 270 L 605.0599999999957 270 C 605.0599999999957 270 605.0599999999957 270 605.0599999999957 270 L 582.0599999999957 270 C 582.0599999999957 270 582.0599999999957 270 582.0599999999957 270 L 582.0599999999957 270 C 582.0599999999957 270 582.0599999999957 270 582.0599999999957 270 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Sun, 0. Meeting Time." style="outline: none;"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="url(#highcharts-9sssptf-48-)" aria-hidden="false" role="region" tabindex="-1" aria-label="Active Code Time, series 2 of 4. Bar series with 7 bars." style="outline: none;"><path fill="#0896FC" d="M 54.51714285714314 259.4400003 L 67.51714285714314 259.4400003 C 70.01714285714314 259.4400003 72.51714285714314 261.9400003 72.51714285714314 264.4400003 L 72.51714285714314 270 C 72.51714285714314 270 72.51714285714314 270 72.51714285714314 270 L 49.51714285714314 270 C 49.51714285714314 270 49.51714285714314 270 49.51714285714314 270 L 49.51714285714314 264.4400003 C 49.51714285714314 261.9400003 52.01714285714314 259.4400003 54.51714285714314 259.4400003 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Mon, 11.733333. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 147.94571428571714 254.52 L 160.94571428571714 254.52 C 163.44571428571714 254.52 165.94571428571714 257.02 165.94571428571714 259.52 L 165.94571428571714 270 C 165.94571428571714 270 165.94571428571714 270 165.94571428571714 270 L 142.94571428571714 270 C 142.94571428571714 270 142.94571428571714 270 142.94571428571714 270 L 142.94571428571714 259.52 C 142.94571428571714 257.02 145.44571428571714 254.52 147.94571428571714 254.52 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Tue, 17.2. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 241.37428571428714 32.1599997 L 254.3742857142871 32.1599997 C 256.8742857142871 32.1599997 259.3742857142871 34.6599997 259.3742857142871 37.1599997 L 259.3742857142871 270 C 259.3742857142871 270 259.3742857142871 270 259.3742857142871 270 L 236.37428571428714 270 C 236.37428571428714 270 236.37428571428714 270 236.37428571428714 270 L 236.37428571428714 37.1599997 C 236.37428571428714 34.6599997 238.87428571428714 32.1599997 241.37428571428714 32.1599997 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Wed, 264.266667. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 334.80285714285714 189.09 L 347.80285714285714 189.09 C 350.30285714285714 189.09 352.80285714285714 191.59 352.80285714285714 194.09 L 352.80285714285714 270 C 352.80285714285714 270 352.80285714285714 270 352.80285714285714 270 L 329.80285714285714 270 C 329.80285714285714 270 329.80285714285714 270 329.80285714285714 270 L 329.80285714285714 194.09 C 329.80285714285714 191.59 332.30285714285714 189.09 334.80285714285714 189.09 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Thu, 89.9. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 423.62142872142715 269.2199997 L 445.84142842142717 269.2199997 C 446.03642849642716 269.2199997 446.23142857142716 269.414999775 446.23142857142716 269.60999985 L 446.23142857142716 270 C 446.23142857142716 270 446.23142857142716 270 446.23142857142716 270 L 423.23142857142716 270 C 423.23142857142716 270 423.23142857142716 270 423.23142857142716 270 L 423.23142857142716 269.60999985 C 423.23142857142716 269.414999775 423.42642864642715 269.2199997 423.62142872142715 269.2199997 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Fri, 0.866667. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 521.6599999999972 114.1349994 L 534.6599999999972 114.1349994 C 537.1599999999972 114.1349994 539.6599999999972 116.6349994 539.6599999999972 119.1349994 L 539.6599999999972 270 C 539.6599999999972 270 539.6599999999972 270 539.6599999999972 270 L 516.6599999999972 270 C 516.6599999999972 270 516.6599999999972 270 516.6599999999972 270 L 516.6599999999972 119.1349994 C 516.6599999999972 116.6349994 519.1599999999972 114.1349994 521.6599999999972 114.1349994 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Sat, 173.183334. Active Code Time." style="outline: none;"></path><path fill="#0896FC" d="M 615.0885714285672 211.0649994 L 628.0885714285672 211.0649994 C 630.5885714285672 211.0649994 633.0885714285672 213.5649994 633.0885714285672 216.0649994 L 633.0885714285672 270 C 633.0885714285672 270 633.0885714285672 270 633.0885714285672 270 L 610.0885714285672 270 C 610.0885714285672 270 610.0885714285672 270 610.0885714285672 270 L 610.0885714285672 216.0649994 C 610.0885714285672 213.5649994 612.5885714285672 211.0649994 615.0885714285672 211.0649994 Z" stroke="transparent" stroke-width="1" opacity="1" filter="none" class="highcharts-point" tabindex="-1" role="img" aria-label="Sun, 65.483334. Active Code Time." style="outline: none;"></path></g><g class="highcharts-markers highcharts-series-1 highcharts-column-series" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-2 highcharts-line-series" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="url(#highcharts-9sssptf-48-)" aria-hidden="true"><path fill="none" d="M 46.714285714286 245.23480496761 L 140.14285714286 246.19918480867 L 233.57142857143 246.48831529547 L 327 246.08537287648 L 420.42857142857 247.14885454193 L 513.85714285714 266.29766594716 L 607.28571428571 266.77315796319" class="highcharts-graph" data-z-index="1" stroke="#14B8A6" stroke-width="2" stroke-dasharray="8,6" filter="none"></path><path fill="none" d="M 46.714285714286 245.23480496761 L 140.14285714286 246.19918480867 L 233.57142857143 246.48831529547 L 327 246.08537287648 L 420.42857142857 247.14885454193 L 513.85714285714 266.29766594716 L 607.28571428571 266.77315796319" data-z-index="2" class="highcharts-tracker-line" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22"></path></g><g class="highcharts-markers highcharts-series-2 highcharts-line-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="none" aria-hidden="false" role="region" tabindex="-1" aria-label="Global 90-day avg, series 3 of 4. Line with 7 data points." style="outline: none;"><path fill="#14B8A6" d="M 46.5 249.23480496761 A 4 4 0 1 1 46.500199999999914 249.23480496260999 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Mon, 27.516883369327655. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 140.5 250.19918480867 A 4 4 0 1 1 140.50019999999992 250.19918480367 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Tue, 26.44535021258924. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 233.5 250.48831529547 A 4 4 0 1 1 233.50019999999992 250.48831529046998 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Wed, 26.124094116144814. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 327.5 250.08537287648 A 4 4 0 1 1 327.5001999999999 250.08537287148 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Thu, 26.57180791502716. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 420.5 251.14885454193 A 4 4 0 1 1 420.5001999999999 251.14885453693 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Fri, 25.390161620073922. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 513.5 270.29766594716 A 4 4 0 1 1 513.5002 270.29766594216 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Sat, 4.113704503160681. Global 90-day avg." style="outline: none;"></path><path fill="#14B8A6" d="M 607.5 270.77315796319 A 4 4 0 1 1 607.5002 270.77315795819 Z" stroke="#ffffff" stroke-width="0" opacity="0" class="highcharts-point" tabindex="-1" role="img" aria-label="Sun, 3.5853800409015797. Global 90-day avg." style="outline: none;"></path></g><g class="highcharts-series highcharts-series-3 highcharts-jump-line-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="url(#highcharts-9sssptf-48-)" aria-hidden="false" role="region" tabindex="-1" aria-label="Your 90-day avg, series 4 of 4 with 7 data points." style="outline: none;"><path fill="none" d="M 24.291428571428856 267 h 44.84571428571429" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 117.72000000000287 267 h 44.84571428571429" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 211.14857142857286 267 h 44.84571428571429" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 304.57714285714286 267 h 44.84571428571429" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 398.0057142857129 267 h 44.84571428571429" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 491.4342857142829 267 h 44.84571428571429" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path><path fill="none" d="M 584.8628571428528 267 h 44.84571428571429" class="jump-line" stroke-width="3" stroke="#F59E0B" stroke-dasharray="6 2"></path></g><g class="highcharts-markers highcharts-series-3 highcharts-jump-line-series" data-z-index="0.1" opacity="1" transform="translate(34,10) scale(1 1)" clip-path="none" aria-hidden="true"></g></g><text x="344" text-anchor="middle" class="highcharts-title" data-z-index="4" style="font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);" y="25" aria-hidden="true"></text><text x="344" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="24" aria-hidden="true"></text><text x="0" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="322" aria-hidden="true"></text><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7" aria-hidden="true"><text x="80.71428571428427" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Mon</text><text x="174.14285714285427" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Tue</text><text x="267.5714285714243" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Wed</text><text x="361.00000000000426" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Thu</text><text x="454.4285714285743" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Fri</text><text x="547.8571428571444" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Sat</text><text x="641.2857142857143" style="color: rgb(132, 140, 153); cursor: default; font-size: 0.8em; fill: rgb(132, 140, 153);" text-anchor="middle" transform="translate(0,0)" y="307" opacity="1">Sun</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7" aria-hidden="true"><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="285" opacity="1">0m</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="231" opacity="1">1h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="177" opacity="1">2h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="123" opacity="1">3h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="69" opacity="1">4h</text><text x="19" style="color: rgb(107, 114, 128); cursor: default; font-size: 0.8em; fill: rgb(107, 114, 128);" text-anchor="end" transform="translate(0,0)" y="15" opacity="1">5h</text></g><g class="highcharts-control-points" data-z-index="99" clip-path="url(#highcharts-9sssptf-72-)" aria-hidden="true"></g></svg><div aria-hidden="false" class="highcharts-a11y-proxy-container-after" style="top: 0px; left: 0px; white-space: nowrap; position: absolute;"><div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-zoom"></div><div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-chartMenu"></div></div></div><div id="highcharts-screen-reader-region-after-1" aria-hidden="false" style="position: relative;"><div style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;" aria-hidden="false"><div id="highcharts-end-of-chart-marker-1" class="highcharts-exit-anchor" tabindex="0" aria-hidden="false">End of interactive chart.</div></div></div></div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</turbo-frame>    </div>
+  </div>
+
+  <div class="flex justify-end border-t bg-white dark:bg-gray-800 rounded-md dark:border-gray-800 w-full p-4 text-xs md:text-sm text-gray-500 dark:text-gray-400">
+    To filter your data by projects or specific date ranges, &nbsp;<a class="text-blue-500 hover:underline font-medium" href="/code_time/reports">create a Code Time Report -&gt;</a>
+  </div>
+</div>
+
+      </main>
+    </div>
+
+    
+    
+
+    
+    
+
+    <dialog role="dialog" id="turbo-confirm-dialog" autofocus="false" class="fixed inset-0 w-full p-0 bg-white border rounded-md sm:max-w-xl md:max-w-2xl sm:w-full dark:text-white dark:bg-gray-800 dark:border-gray-800">
+      <section class="p-6">
+        <h1 id="turbo-confirm-prompt" class="mb-4 text-xl font-medium"></h1>
+        <p id="turbo-confirm-details" class="mb-8"></p>
+
+        <form method="dialog">
+          <div class="flex flex-wrap justify-end gap-2">
+            <button value="cancel" class="btn-tertiary">Cancel</button>
+            <button id="turbo-confirm-button" value="confirm" class="btn-primary">Confirm</button>
+          </div>
+        </form>
+      </section>
+    </dialog>
+
+    <div class="hidden" data-controller="snowplow-tracking" data-snowplow-tracking-snowplow-tracker-api-host-value="snow.software.com"></div>
+
+    <script type="text/javascript">
+  !(function (e, t, n) {
+    function a() {
+      var e = t.getElementsByTagName("script")[0],
+          n = t.createElement("script");
+      (n.type = "text/javascript"),
+          (n.async = !0),
+          (n.src = "https://beacon-v2.helpscout.net"),
+          e.parentNode.insertBefore(n, e);
+    }
+    if (
+      ((e.Beacon = n = function (t, n, a) {
+        e.Beacon.readyQueue.push({ method: t, options: n, data: a });
+      }),
+      (n.readyQueue = []),
+      "complete" === t.readyState)
+    )
+    return a();
+    e.attachEvent ? e.attachEvent("onload", a) : e.addEventListener("load", a, !1);
+  })(window, document, window.Beacon || function () {});
+
+  window.Beacon("init", "fb207a7e-1ada-484d-a18e-95961872208c");
+</script>
+
+
+      <script defer="" src="https://cdn.announcekit.app/widget-v2.js"></script>
+
+      <div class="hidden" data-controller="datadog" data-datadog-env-value="prod" data-datadog-version-value="v27.57.0" data-datadog-user-id-value="954252"></div>
+
+      <!-- Segment page tracking -->
+      <script type="text/javascript">
+        window.analytics.page({
+          "organization_id": "",
+          "organization_slug": ""
+        });
+      </script>
+  
+
+<div class="announcekit-frame-wrapper" style="position: fixed; width: 400px; overflow: hidden; top: -1000em; opacity: 0; z-index: 2147483001;"><iframe name="ank_widget_346pmof1n" allowfullscreen="true" data-announcekit-widget="" sandbox="allow-same-origin allow-presentation allow-scripts allow-top-navigation allow-popups allow-popups-to-escape-sandbox allow-forms allow-downloads" style="position: absolute; inset: 0px; border: 0px; width: 100%; height: 100%; background-color: rgb(255, 255, 255);"></iframe></div><div id="beacon-container"><div class="hsds-beacon"><div class="Beacon"></div></div></div><a class="announcekit-booster-modal-mzqixudr3 announcekit-booster-modal announcekit-booster-modal-mzqixudr3-active" target="_blank" href="https://changelog.software.com/improved-work-breakdown-algorithms-19Nq6Y" style="left: auto; right: 1em; background-color: rgb(255, 255, 255); color: rgb(50, 50, 50);">
+  <div class="announcekit-booster-modal-header">
+    <span class="announcekit-booster-modal-label" style="background-color: rgba(55, 214, 122, 0.125); border-radius: 3px; padding: 0.2em 0.5em; color: rgb(55, 214, 122); text-transform: uppercase; margin-right: 5px; font-size: 0.65em; font-weight: 500;">Improvement</span>
+    <span class="announcekit-booster-modal-title">📐&nbsp;Improved work breakdown algorithms</span>
+    <span class="announcekit-booster-modal-close">×</span>
+  </div>
+  <div class="announcekit-booster-modal-body">We’re making an adjustment to improve the accuracy of our data — specifically, how we track the amount of code that is New, Churn, and Refac...</div>
+  <div class="announcekit-booster-modal-footer">
+    <a href="#" target="_blank" class="announcekit-booster-modal-referer-link">⚡️ by AnnounceKit</a>
+  <div>
+</div></div></a></body></html>
