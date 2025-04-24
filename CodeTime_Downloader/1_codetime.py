@@ -6,20 +6,25 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import datetime
 import os
+from dotenv import load_dotenv
 
-# Kullanıcı bilgileri (BURAYI KENDİ BİLGİLERİNLE DOLDUR)
-GITHUB_USERNAME = "yourusername"
-GITHUB_PASSWORD = "yourpassword"
+load_dotenv()  # .env dosyasını yükle
+
+
+# GITHUB_USERNAME ve GITHUB_PASSWORD değerlerini .env dosyasından al
+GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
+GITHUB_PASSWORD = os.getenv("GITHUB_PASSWORD")
+
 
 # Kayıtları saklayacağımız klasör
 SAVE_DIR = "code_time_html"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 # Başlangıç tarihi
-start_date = datetime.date(2025, 2, 17)
+start_date = datetime.date(2025, 4, 20)
 
 # Kaç hafta geriye gideceğimiz
-weeks_to_fetch = 12  
+weeks_to_fetch = 12
 
 # Temel URL
 base_url = "https://app.software.com/code_time?week_of={}"
