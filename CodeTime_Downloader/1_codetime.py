@@ -17,14 +17,14 @@ GITHUB_PASSWORD = os.getenv("GITHUB_PASSWORD")
 
 
 # Kayıtları saklayacağımız klasör
-SAVE_DIR = "code_time_html"
+SAVE_DIR = "code_time_screenshots"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
-# Başlangıç tarihi
-start_date = datetime.date(2025, 4, 20)
+# Bugünün tarihi
+today = datetime.date.today()
 
-# Kaç hafta geriye gideceğimiz
-weeks_to_fetch = 12
+# Son 90 günü haftalara çevir (yaklaşık 13 hafta)
+weeks_to_fetch = 13
 
 # Temel URL
 base_url = "https://app.software.com/code_time?week_of={}"
@@ -60,11 +60,18 @@ password_input.send_keys(Keys.RETURN)
 
 time.sleep(5)  # Giriş işleminin tamamlanmasını bekle
 
-# 5️⃣ 12 hafta boyunca sayfaları indir
+# 📋 Kullanıcıdan onay bekle
+input("Giriş işlemi tamamlandı. Devam etmek için Enter'a basınız...")
+
+# 5️⃣ Son 13 hafta boyunca sayfaları indir
 for i in range(weeks_to_fetch):
-    # İlgili haftanın tarihini hesapla
-    week_date = start_date - datetime.timedelta(weeks=i)
-    formatted_date = week_date.strftime("%Y-%m-%d")
+    # İlgili haftanın tarihini hesapla (bugünden geriye doğru)
+    target_date = today - datetime.timedelta(weeks=i)
+    
+    # Haftanın başlangıç tarihini hesapla (Pazartesi)
+    days_since_monday = target_date.weekday()
+    week_start = target_date - datetime.timedelta(days=days_since_monday)
+    formatted_date = week_start.strftime("%Y-%m-%d")
 
     # URL'yi oluştur
     url = base_url.format(formatted_date)
@@ -73,12 +80,11 @@ for i in range(weeks_to_fetch):
     driver.get(url)
     time.sleep(3)  # Sayfanın tam yüklenmesini bekle
 
-    # 7️⃣ HTML sayfasını kaydet
-    file_path = os.path.join(SAVE_DIR, f"code_time_{formatted_date}.html")
-    with open(file_path, "w", encoding="utf-8") as f:
-        f.write(driver.page_source)
+    # 7️⃣ Ekran görüntüsü al ve kaydet
+    screenshot_path = os.path.join(SAVE_DIR, f"code_time_week_{formatted_date}.png")
+    driver.save_screenshot(screenshot_path)
 
-    print(f"[+] {formatted_date} sayfası indirildi.")
+    print(f"[+] {formatted_date} haftası ekran görüntüsü alındı.")
 
 # İşlem bitti, tarayıcıyı kapat
 driver.quit()
