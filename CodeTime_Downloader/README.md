@@ -1,4 +1,4 @@
-# Code Time Downloader 🚀
+# CodeTime Screenshot Downloader 📊
 
 VSCode içerisinde **"Code Time"** eklentisi ile ne kadar süre aktif kodlama yaptığınızı, çalışma saatleri dışındaki mesailerinizi ve birçok istatistiği görebilirsiniz. Ayrıca, **tarayıcı üzerinden hesabınıza giriş yaparak** detaylı grafikler ve haftalık raporlarla karşılaşabilirsiniz.
 
@@ -6,85 +6,121 @@ Ancak, **Code Time platformu bu verileri dışa aktarmaya izin vermediği için*
 
 Bu script sayesinde:
 
-✅ **Haftalık bazda tüm istatistiklerinizi HTML olarak kaydedebilirsiniz.**  
+✅ **Haftalık bazda tüm istatistiklerinizi ekran görüntüsü olarak kaydedebilirsiniz.**  
 ✅ **Otomatik olarak GitHub hesabınızla giriş yapar.**  
-✅ **90 günlük (12 haftalık) geçmiş verileri indirir.**  
-✅ **Tüm verileri içeren bir "index.html" sayfası oluşturur.**  
-✅ **İlgili tarihlere tıklayarak detaylı raporları görebilirsiniz.**  
-
+✅ **Son 90 günlük (13 haftalık) geçmiş verileri indirir.**  
+✅ **Tüm verileri görsel olarak içeren bir "index.html" sayfası oluşturur.**  
+✅ **Responsive Bootstrap tasarımı ile mobil uyumlu arayüz.**  
+✅ **Modal pencereler ile büyütülmüş görüntü desteği.**
 
 ## **🔧 Kurulum**
 
-Sistemde gerekli kütüphanelerin yüklü olduğundan emin olun. Eğer yüklü değilse, aşağıdaki komutları çalıştırarak yükleyebilirsiniz:
+Sistemde gerekli kütüphanelerin yüklü olduğundan emin olun:
 
 ```sh
-pip install selenium webdriver-manager requests
-
+pip install selenium webdriver-manager python-dotenv
 ```
 
+### **🔑 Ortam Dosyası (.env) Kurulumu**
 
-Giriş yapmak için github kullandığım için Selenium ile "github ile giriş yap" seçeneğini seçecek şekilde yaptım. İsterseniz kodu değiştirebilir veya kendi github bilgilerinizi kullanarak giriş yapabilirsiniz. 
+Güvenlik için GitHub bilgilerinizi `.env` dosyasında saklayın:
 
+```env
+GITHUB_USERNAME=yourusername
+GITHUB_PASSWORD=yourpassword
+```
 
 ## **📌 Kullanım**
 
-### **1️⃣ Giriş Yaparak Code Time Verilerini İndir**
-`1_codetime.py` dosyası, **GitHub hesabınızla otomatik giriş yaparak** ilgili HTML sayfalarını indirir.
-
-**Not** : Kod içerisinde kendi github bilgilerinizi girin 
-```python
-GITHUB_USERNAME = "yourusername"
-GITHUB_PASSWORD = "yourpassword"
-```
-Ardından çalıştırın
+### **1️⃣ CodeTime Verilerini Ekran Görüntüsü Olarak İndir**
+`1_codetime.py` dosyası, **GitHub hesabınızla otomatik giriş yaparak** haftalık istatistiklerin ekran görüntüsünü alır.
 
 ```sh
-python  1_codetime.py
+python 1_codetime.py
 ```
 
 **📌 Ne yapar?**
 - **GitHub ile otomatik giriş yapar.**
-- **Son 12 haftaya ait haftalık istatistikleri çeker.**
-- **Her hafta için bir `.html` dosyası kaydeder.**
-- **Dosya adları `code_time_YYYY-MM-DD.html` formatında olur.**
+- **Kullanıcıdan onay bekler (2FA veya diğer doğrulamalar için).**
+- **Son 13 haftaya ait haftalık istatistiklerin ekran görüntüsünü alır.**
+- **Her hafta için bir `.png` dosyası kaydeder.**
+- **Dosya adları `code_time_week_YYYY-MM-DD.png` formatında olur.**
+- **Otomatik olarak HTML index sayfasını oluşturur.**
 
-### **2️⃣ Ana Sayfa (index.html) Oluştur**
-İndirdiğimiz sayfalara kolayca erişebilmek için bir **ana sayfa (index.html) oluşturur.** Bunun için aşağıdaki komutu çalıştırın:
+### **2️⃣ Manuel HTML İndex Oluşturma (Opsiyonel)**
+Eğer sadece HTML sayfasını yeniden oluşturmak istiyorsanız:
 
 ```sh
-python 2_generate_homepage.py
+python generate_index.py
 ```
 
 **📌 Ne yapar?**
-- **Tüm indirilen HTML dosyalarını tarar.**
-- **Her hafta için bir satır içeren tabloyu oluşturur.**
-- **Tablodaki tarihler haftalık formatta gösterilir (örn: `2024-12-02 - 2024-12-08`).**
-- **Her sayfanın içine bir "Geri Dön" butonu ekler.**
-- **Sonuçları `index.html` içine kaydeder.**
+- **Tüm indirilen screenshot'ları tarar.**
+- **Her hafta için görsel kart içeren responsive sayfa oluşturur.**
+- **Haftalık tarihleri düzgün formatta gösterir.**
+- **Modal pencereler ile büyütülmüş görüntü desteği.**
+- **Özet istatistikler ile toplam hafta sayısı gösterir.**
 
 ---
 
-## **📂 Dosya Açıklamaları**
+## **📂 Dosya Yapısı**
 ```sh
-├── 1_codetime.py   # GitHub ile giriş yaparak Code Time verilerini indirir.
-├── 2_generate_homepage.py     # Tüm HTML dosyalarından 'index.html' sayfasını oluşturur.
-├── index.html            # Ana sayfa, buradan haftalık verilere erişebilirsiniz.
-└── code_time_html/       # Haftalık verilerin kaydedildiği klasör.
+├── 1_codetime.py              # Ana script - GitHub giriş ve screenshot alma
+├── generate_index.py          # HTML index sayfası oluşturucu
+├── .env                       # GitHub giriş bilgileri (güvenli)
+├── index.html                 # Ana sayfa - haftalık görsel raporlar
+└── code_time_screenshots/     # Haftalık ekran görüntüleri klasörü
+    ├── code_time_week_2024-01-01.png
+    ├── code_time_week_2024-01-08.png
+    └── ...
 ```
 
 ---
 
-## **🎯 Özellikler ve Geliştirmeler**
-✔ **GitHub ile otomatik giriş yapma**  
-✔ **Haftalık olarak tarihleri düzgün formatta listeleme**  
-✔ **Verileri `.html` dosyaları olarak saklama**  
-✔ **Kolay erişim için index.html oluşturma**  
-✔ **Her rapor sayfasına "Geri Dön" butonu ekleme**  
-✔ **Herhangi bir veri kaybı yaşamadan offline görüntüleme**  
+## **🎯 Özellikler**
+
+### **🔐 Güvenlik**
+- `.env` dosyası ile güvenli kimlik bilgisi yönetimi
+- Kullanıcı onayı ile manuel kontrol imkanı
+
+### **📱 Modern Arayüz**
+- Bootstrap 5 ile responsive tasarım
+- Modal pencereler ile büyütülmüş görüntü
+- Gradient renkler ve modern kartlar
+- Mobil uyumlu tasarım
+
+### **📊 Veri Yönetimi**
+- Haftalık bazda organize edilmiş veriler
+- Tarih sıralı görüntüleme (en yeni önce)
+- Özet istatistikler ve veri sayısı
+- PNG formatında yüksek kaliteli görüntüler
+
+### **⚡ Performans**
+- Selenium ile otomatik tarayıcı kontrolü
+- 13 haftalık veri toplama (90 gün kapsamı)
+- Hata kontrolü ve güvenli dosya işlemleri
+
+---
+
+## **🚀 Kullanım Talimatları**
+
+1. **Depoyu klonlayın ve gereksinimleri yükleyin**
+2. **`.env` dosyasını oluşturun ve GitHub bilgilerinizi girin**
+3. **`python 1_codetime.py` komutu ile veri toplama işlemini başlatın**
+4. **Giriş tamamlandıktan sonra Enter'a basarak devam edin**
+5. **İşlem tamamlandığında `index.html` dosyasını açın**
+6. **Haftalık istatistiklerinizi görsel olarak inceleyin**
+
+---
+
+## **⚠️ Önemli Notlar**
+
+- Script çalışırken tarayıcı penceresi açılacaktır
+- 2FA aktif ise manual doğrulama gerekebilir
+- Her hafta için yaklaşık 3 saniye bekleme süresi vardır
+- Toplam işlem süresi yaklaşık 1-2 dakikadır
 
 ---
 
 ### **📩 Geri Bildirim**
-Eğer herhangi bir hata veya geliştirme önerin varsa, çekinmeden paylaşabilirsin! 😊
-
----
+Herhangi bir sorun yaşarsanız veya geliştirme öneriniz varsa, çekinmeden paylaşabilirsiniz! 🚀
